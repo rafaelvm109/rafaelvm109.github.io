@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodos Final</title>
+
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='forms.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+</head>
+<body id="page-give-classes">
+    <!-- HTML CODE -->
+    <div class="container">
+        <header>
+            <div class="title-box">
+                <h1>Calculadora de Integrales</h1>
+            </div>
+        </header>
+
+        <main>
+            <form action="{{ url_for('resultado') }}" method="post" id="inputs-necesarios" style="border: 0;">
+                <fieldset id="no-row">
+                    <div class="select-block">
+                        <label for="metodo">Escoge el metodo:<br></label>
+                        <select name="metodo" id="metodo">
+                            <option value="">Metodo</option>
+                            <option value="1">Trapezoide</option>
+                            <option value="2">Simpson 1/3</option>
+                            <option value="3">Simpson 3/8</option>
+                        </select>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="funcion">Ingresa la funcion:<br></label>
+                        <input name="funcion" placeholder="f(x)" id="funcion" required>
+                    </div>
+                </fieldset>
+
+                <fieldset id="need-row">
+                    <div class="input-block">
+                        <label for="limite-a">Limite a:<br></label>
+                        <input type="number" name="limite-a" placeholder="a" id="limite-a" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="limite-b">Limite b:<br></label>
+                        <input type="number" name="limite-b" placeholder="b" id="limite-b" required>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="valor-n">Valor de n:<br></label>
+                        <input type="number" name="valor-n" placeholder="n" id="valor-n" required>
+                    </div>
+                </fieldset>
+
+                <div class="class-button">
+                    <button type="submit" name="button" href="{{ url_for('resultado') }}">Calcular</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

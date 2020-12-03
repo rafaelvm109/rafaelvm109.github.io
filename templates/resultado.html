@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+
+</head>
+<body id="page-give-classes">
+    <!-- HTML CODE -->
+    <div class="container">
+        <header>
+            <div class="title-box">
+                <h1>Calculadora de Integrales</h1>
+            </div>
+        </header>
+
+        <main>
+            <picture>
+                <img src="{{ img }}" alt="grafica">
+            </picture>
+
+            <div class=integrales>
+                El resultado de la integral por el metodo: {{ metodo }} <br>
+                es: {{ integral }}
+            </div>
+
+            <div class="button-regresar">
+                <a href="/">Regresar</a>
+                <!-- <button type="submit" name="button" href="{{ url_for('homepage') }}">Regresar</button> -->
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

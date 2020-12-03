@@ -1,0 +1,90 @@
+:root {
+    --primary-color: #5C2296;
+    --primary-color-darker: #492072;
+    --background-color: #201F23;
+    --text-color: #FFFFFF;
+}
+
+body {
+    background: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Archivo;
+}
+
+
+header .title-box{
+    font-size: 130%;
+    background: var(--primary-color);
+    /* top, left, bottom, right */
+    padding: 10px 50px 10px 50px;
+    margin: 30px 500px 30px 500px;
+    border-radius: 25px;
+}
+
+main {
+    background: var(--background-color);
+    justify-content: space-between;
+    border: 0;
+
+}
+
+/* ====================================================================== */
+.class-button {
+    display: grid;
+}
+
+.class-button button {
+    font: 600 200% Archivo;
+    margin: 150px 700px 0 700px;
+    padding: 25px 0 25px 0;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 0;
+    border-radius: 50px;
+
+}
+
+.class-button button:hover {
+    transition: background 0.2s;
+    background: var(--primary-color-darker);
+}
+
+/* pagina de resultados */
+picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+}
+
+.integrales {
+    font: 400 150% Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.button-regresar a {
+    font: 600 200% Archivo;
+    margin: 50px 700px 0 700px;
+    padding: 25px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 0;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.button-regresar a:hover {
+    transition: background 0.2s;
+    background: var(--primary-color-darker);
+}
+
+

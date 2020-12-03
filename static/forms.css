@@ -1,0 +1,46 @@
+.select-block label,
+.input-block label {
+    font-size: 150%;
+    color: var(--text-color);
+}
+
+.select-block select,
+.input-block input {
+    width: 175px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: #F8F8FC;
+    border: 1px solid #000000;
+    padding: 0 10px;
+    font-family: Archivo;
+    font-size: 110%;
+    color: #858585;
+}
+
+#need-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    position: absolute;
+    align-items: center;
+}
+
+
+form div {
+    border: 0;
+    margin-bottom: 40px;
+}
+
+fieldset {
+    border: none;
+}
+
+#no-row{
+    padding-left: 700px;
+}
+
+#need-row {
+    padding-left: 450px;
+    margin-bottom: 100px;
+}
